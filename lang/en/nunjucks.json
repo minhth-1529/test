@@ -1,0 +1,88 @@
+{
+  "hrs": {
+    "title": "HRS",
+    "assets": "../../assets"
+  },
+  "cor": {
+    "title": "HRS Corporate",
+    "assets": "../../corporate-prefix/assets"
+  },
+  "node": "../../node_modules",
+  "login": {
+    "heading": "LOGIN / MEMBER REGISTRATION"
+  },
+  "footer": {
+    "logo": {
+      "url": "http://via.placeholder.com/74x39",
+      "width": 74,
+      "height": 39
+    },
+    "links": [
+      {
+        "label": "Terms of Service",
+        "url": "#"
+      },
+      {
+        "label": "Membership Policy",
+        "url": "#"
+      },
+      {
+        "label": "Privacy Policy",
+        "url": "#"
+      }
+    ],
+    "copyright": "© 1999-2018 HIROSE ELECTRIC CO., LTD. All Rights Reserved."
+  },
+  "product_detail_page": {
+    "popups": [
+      {
+        "target": "hrsForgotPassword",
+        "label": "Forgot Password"
+      },
+      {
+        "target": "hrsPasswordReminder",
+        "label": "Password Reminder Completion"
+      },
+      {
+        "target": "hrsReissueEmailTransmission",
+        "label": "Re-issue Email Transmission"
+      },
+      {
+        "target": "hrsReissueEmailTransmissionCompletion",
+        "label": "Re-issue Email Transmission Completion"
+      },
+      {
+        "target": "hrsAgreementTerm",
+        "label": "Agreement Term"
+      },
+      {
+        "target": "addToWishlist",
+        "label": "Add to Wishlist"
+      },
+      {
+        "target": "pdpStorelist",
+        "label": "PDP Storelist"
+      },
+      {
+        "target": "pdpSpecification",
+        "label": "PDP Special Specification"
+      },
+      {
+        "target": "pdpNoaSystemPopup",
+        "label": "PDP Name-of-article System pop-up"
+      },
+      {
+        "target": "confirmLanguage",
+        "label": "Language"
+      },
+      {
+        "target": "memberAgreement",
+        "label": "Member Agreement"
+      },
+      {
+        "target": "chemicalDataConfirmation",
+        "label": "Chemical Data Application Confirmation"
+      }
+    ]
+  }
+}

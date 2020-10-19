@@ -1,0 +1,273 @@
+.site-banner {
+	.thumb {
+		display: block;
+		padding-bottom: 32%;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+
+		@media screen and (max-width: 479px) {
+			padding-bottom: 150px;
+		}
+	}
+}
+
+.include-control {
+	.lSAction > a {
+		background-image: none;
+		background-color: #C5C5C5;
+		border-radius: 100%;
+		color: #fff;
+		.square(36px);
+		opacity: 1;
+		margin-top: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 24px;
+		.ver-center();
+
+		&.lSNext,
+		&.lSPrev {
+			&:before {
+				display: inline-block;
+				font: normal normal normal 14px/1 FontAwesome;
+				font-size: inherit;
+				text-rendering: auto;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+			}
+		}
+
+		&.lSPrev {
+			left: 0;
+
+			&:before {
+				content: "\f104";
+				margin-left: -2px;
+			}
+		}
+
+		&.lSNext {
+			right: 0;
+
+			&:before {
+				content: "\f105";
+				margin-right: -4px;
+			}
+		}
+	}
+}
+
+.site-about {
+	margin-top: 40px;
+
+	&__inner {
+		background-color: #fff;
+		padding: 12px 0 48px 24px;
+		display: flex;
+
+		.title {
+			border-bottom: 2px solid @brand-success;
+			padding-bottom: 6px;
+			font-size: 35px;
+		}
+
+		@media screen and (max-width: @screen-sm-max) {
+			flex-direction: column;
+			padding-left: 0;
+			padding-bottom: 0;
+		}
+	}
+
+	&__aside {
+		&.aside-left {
+			padding-top: 36px;
+
+			@media screen and (min-width: @screen-md-min) {
+				width: 30%;
+			}
+
+			@media screen and (max-width: @screen-sm-max) {
+				order: 2;
+				padding: 16px;
+			}
+		}
+
+		&.aside-right {
+			@media screen and (min-width: @screen-md-min) {
+				padding-left: 40px;
+				width: 70%;
+			}
+
+			@media screen and (max-width: @screen-sm-max) {
+				order: 1;
+			}
+		}
+	}
+
+	.swiper-slide {
+		padding: 10px 0;
+		margin-top: 0 !important;
+
+		&__inner {
+			overflow: hidden;
+			position: relative;
+
+			a {
+				padding-bottom: 66%;
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: cover;
+				transition: all 0.2s ease-in-out;
+			}
+
+			&:hover {
+				a {
+					transform: scale(1.2);
+				}
+			}
+		}
+
+		.name {
+			position: absolute;
+			bottom: 45px;
+			left: 0;
+			right: 0;
+			background-color: rgba(255, 255, 255, 0.5);
+			padding: 8px 32px;
+			pointer-events: none;
+
+			span {
+				display: block;
+				.truncateLines(29px, 32px, 2, false);
+			}
+
+			@media screen and (max-width: @screen-xs-max) {
+				span {
+					padding: 8px 16px;
+					font-size: 22px;
+					.truncateLines(22px, 26px, 2, false);
+				}
+			}
+		}
+	}
+
+	.swiper-button-prev,
+	.swiper-button-next {
+		background-image: none;
+		position: static;
+		margin: 0 0 0 2px;
+		.square(28px);
+		background-color: @brand-primary;
+		color: #fff;
+		opacity: 1;
+		cursor: pointer;
+		pointer-events: auto;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		outline: none;
+	}
+
+	&__content {
+		.truncateLines(14px, 21px, 18, false);
+	}
+}
+
+.site-recommend {
+	margin-top: 96px;
+
+	&__slider {
+		img {
+			.square(auto);
+			max-width: 100%;
+			max-height: 100%;
+			position: absolute;
+			.ver-hoz-center();
+		}
+
+		.item {
+			background-color: #fff;
+		}
+
+		.thumb {
+			overflow: hidden;
+			padding-bottom: 98%;
+			position: relative;
+		}
+
+		.content {
+			padding: 16px 16px 0 16px;
+		}
+
+		.country {
+			color: #2F1EC2;
+		}
+
+		.title {
+			color: #000;
+			transition: all 0.3s ease-in-out;
+			font-weight: 700;
+			display: block;
+			.text-overflow();
+
+			&:hover {
+				color: @brand-primary;
+			}
+		}
+	}
+}
+
+.section-email {
+	&__inner {
+		margin-top: 42px;
+
+		@media screen and (max-width: @screen-sm-max) {
+			flex-direction: column;
+		}
+	}
+
+	&__text {
+		display: inline-block;
+		max-width: 360px;
+		.text-overflow();
+
+		@media screen and (max-width: 479px) {
+			max-width: 100%;
+		}
+	}
+
+	form {
+		min-width: 520px;
+		display: flex;
+		border: 1px solid #B0B0B0;
+		border-radius: 2px;
+		padding: 1px;
+
+		@media screen and (max-width: @screen-xs-max) {
+			min-width: auto;
+			width: 100%;
+		}
+
+		input {
+			background-color: transparent;
+			padding: 11px;
+			flex-grow: 1;
+			border: 0;
+			box-shadow: none;
+			outline: none;
+		}
+
+		button {
+			min-width: 160px;
+			font-size: 22px;
+			height: 42px;
+
+			@media screen and (max-width: 479px) {
+				min-width: auto;
+				font-size: 16px;
+			}
+		}
+	}
+}

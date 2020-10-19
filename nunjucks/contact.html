@@ -1,0 +1,219 @@
+{% set title = "Báo giá" %}
+
+{% extends "./_include/_master.html" %}
+
+{% block main %}
+<div class="site-contact site-categories">
+	<div class="container-fluid">
+		<div class="site-contact__wrapper">
+			<div class="site-breadcrumb">
+				<ul class="list-wrapper d-flex">
+					<li class="list-item">
+						<a href="#" class="fz-20 fw-bold">Trang chủ</a>
+					</li>
+					<li class="list-item">
+						<a href="#" class="fz-20 fw-bold">Báo giá</a>
+					</li>
+				</ul>
+			</div>
+			<div class="site-contact__inner site-categories__body">
+				<form method="post">
+					<section class="site-contact__section">
+						<div class="section-title fz-17 fw-bold text-black d-flex align-items-center">
+							<span class="number fz-15 fw-normal">1</span>
+							Chi tiết tin nhắn
+						</div>
+						<div class="section-body">
+							<div class="text-black pt-3">
+								<div class="form-group">
+									<div class="row">
+										<label class="col-xs-2 control-label fw-normal mb-0">Đến</label>
+										<div class="col-xs-10 fw-bold">ANCASA</div>
+									</div>
+								</div>
+								<div class="form-group mb-2">
+									<div class="row">
+										<label class="col-sm-2 control-label fw-normal mb-1">Bạn là ai?</label>
+										<div class="col-sm-10">
+											<div class="clearfix">
+												<label class="checkbox-custom fz-14 mr-2 col-xs-12">
+													<input type="checkbox">
+													<span class="text">Người mua</span>
+													<span class="icon"></span>
+												</label>
+												<label class="checkbox-custom fz-14 mr-2 col-xs-12">
+													<input type="checkbox">
+													<span class="text">Người bán</span>
+													<span class="icon"></span>
+												</label>
+												<label class="checkbox-custom fz-14 mr-2 col-xs-12">
+													<input type="checkbox">
+													<span class="text">Nhà cung cấp</span>
+													<span class="icon"></span>
+												</label>
+												<label class="checkbox-custom fz-14 mr-2 col-xs-12">
+													<input type="checkbox">
+													<span class="text">Nhà sản xuất</span>
+													<span class="icon"></span>
+												</label>
+												<label class="checkbox-custom fz-14 mr-2 col-xs-12">
+													<input type="checkbox">
+													<span class="text">Nhà cung cấp dịch vụ</span>
+													<span class="icon"></span>
+												</label>
+											</div>
+											<label class="checkbox-custom fz-14 mt-1 fw-normal">
+												<input type="checkbox">
+												<span class="icon"></span>
+												<input type="text" placeholder="khác" class="form-control-custom">
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="row">
+										<label class="col-sm-2 control-label fw-normal mb-1">Tiêu đề</label>
+										<div class="col-sm-10">
+											<input type="text" placeholder="Nhập tiêu đề tin nhắn" class="form-control-custom w-100">
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="row">
+										<label class="col-sm-2 control-label fw-normal mb-1">Tin nhắn</label>
+										<div class="col-sm-10">
+											<div class="d-flex note-wrapper">
+												<div class="flex-grow-1">
+													<textarea name="" id="" rows="7" class="w-100 form-control resize-none"
+															  placeholder="nhập chi tiết yêu cầu của bạn như tên sản phẩm, màu sắc, kích thước, MOQ, FOB, v.v."></textarea>
+													<i class="fz-12 text-color">nhập tối đa 5000 kí tự</i>
+												</div>
+												<div class="pl-1">
+													<p class="note fw-bold mb-h1">*** Ghi chú</p>
+													<i class="fz-12 d-block">Để báo giá tốt hơn, bao gồm:</i>
+													<i class="fz-12 d-block">- Tự giới thiệu</i>
+													<i class="fz-12 d-block">- Yêu cầu đặc biệt, nếu có</i>
+												</div>
+											</div>
+											<label class="checkbox-custom fz-14 mt-3 fw-normal">
+												<input type="checkbox">
+												<span class="text text-color">Tôi đồng ý chia sẻ thông tin của tôi đến Nhà cung cấp/ Nhà sản xuất.</span>
+												<span class="icon"></span>
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="site-contact__section">
+						<div class="section-title fz-17 fw-bold text-black d-flex align-items-center">
+							<span class="number fz-15 fw-normal">2</span>
+							Thông tin của bạn
+						</div>
+						<div class="section-body section-info">
+							<div class="pl-2 fz-14 mb-1 mt-3"><span class="note">*</span> Bắt buộc</div>
+							<div class="form-group">
+								<div class="row">
+									<div class="form-inner col-sm-6">
+										<div class="row">
+											<div class="col-sm-12 mb-xs-2 pos-relative has-error">
+												<input type="text" class="w-100 form-control" placeholder="Họ tên đầy đủ của bạn">
+												<span class="error-note note">*</span>
+											</div>
+										</div>
+									</div>
+									<div class="form-inner col-sm-6">
+										<div class="row">
+											<div class="col-sm-6 mb-xs-2 pos-relative">
+												<select class="form-control">
+													<option value="" selected disabled hidden>Giới tính</option>
+													<option value="">Nam</option>
+													<option value="">Nữ</option>
+												</select>
+												<span class="error-note note">*</span>
+											</div>
+											<div class="col-sm-6 pos-relative">
+												<select class="form-control">
+													<option value="" selected disabled hidden>Quốc gia của bạn</option>
+													<option value="">Nam</option>
+													<option value="">Nữ</option>
+												</select>
+												<span class="error-note note">*</span>
+
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="row">
+									<div class="col-sm-6 mb-xs-2 pos-relative">
+										<input type="text" class="w-100 form-control" placeholder="Tên công ty của bạn (nếu có)">
+										<span class="error-note note">*</span>
+									</div>
+									<div class="col-sm-6 pos-relative">
+										<input type="text" class="w-100 form-control" placeholder="Mã số thuế (nếu có)">
+										<span class="error-note note">*</span>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="row">
+									<div class="col-sm-12 pos-relative">
+										<input type="text" class="w-100 form-control" placeholder="Địa chỉ liên hệ">
+										<span class="error-note note">*</span>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="row">
+									<div class="col-sm-6 mb-xs-2 pos-relative">
+										<input type="email" class="w-100 form-control" placeholder="Email của bạn">
+										<span class="error-note note">*</span>
+									</div>
+									<div class="col-sm-6 pos-relative">
+										<input type="tel" class="w-100 form-control" placeholder="Điện thoại của bạn">
+										<span class="error-note note">*</span>
+									</div>
+								</div>
+							</div>
+							<div class="form-group mb-0">
+								<div class="row">
+									<div class="col-sm-6 mb-xs-2">
+										<div class="d-flex align-items-center">
+											<label class="fw-normal text-black ws-norwap mr-2">Hình thức liên hệ đến bạn</label>
+											<div class="d-inline-flex align-items-center pos-relative flex-grow-1 type">
+												<select class="form-control">
+													<option value="" selected disabled hidden>Chọn</option>
+													<option value="">Điện thoại</option>
+													<option value="">Nhắn tin</option>
+													<option value="">Email</option>
+													<option value="">viber</option>
+													<option value="">Zalo</option>
+													<option value="">WhatsApp</option>
+													<option value="">Line</option>
+													<option value="">KakaoTalk</option>
+													<option value="">Khác</option>
+												</select>
+												<span class="error-note note">*</span>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-6 pos-relative">
+										<input type="text" class="w-100 form-control" placeholder="Nhập chi tiết: email, điện thoại, whatsapp,...">
+										<span class="error-note note">*</span>
+									</div>
+								</div>
+							</div>
+							<div class="text-center mt-5">
+								<button type="submit" class="btn btn-success btn-lg">Gửi</button>
+							</div>
+						</div>
+					</section>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}

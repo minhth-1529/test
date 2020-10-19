@@ -1,0 +1,42 @@
+.site-profile{
+	margin-top: 42px;
+
+	&__inner {
+		background-color: #fff;
+		padding: 32px 156px;
+
+		input[type='text'],
+		input[type='tel'],
+		input[type='email'],
+		input[type='password'],
+		select {
+			box-shadow: none !important;
+			outline: none;
+			border: 1px solid #ccc;
+
+			&::-webkit-input-placeholder {
+				font-style: italic;
+			}
+
+			&::-moz-placeholder {
+				font-style: italic;
+			}
+
+			&:-ms-input-placeholder {
+				font-style: italic;
+			}
+
+			&:-moz-placeholder {
+				font-style: italic;
+			}
+		}
+
+		@media screen and (max-width: @screen-md-max) {
+			padding: 32px 56px;
+		}
+
+		@media screen and (max-width: @screen-xs-max) {
+			padding: 16px;
+		}
+	}
+}

@@ -1,0 +1,239 @@
+// font size
+@fz: 0, 9, 10, 13, 14, 12, 15, 16, 17, 18, 20, 22, 24, 25, 26, 28, 29, 30, 32;
+each(@fz, {
+	.fz-@{value} {
+		font-size: (@value * 1px);
+
+		&-xs {
+			@media screen and (max-width: @screen-xs-max) {
+				font-size: (@value * 1px) !important;
+			}
+		}
+	}
+});
+
+// display
+@dp: inline-block, block, flex, inline-flex, none;
+each(@dp, {
+	.d-@{value} {
+		display: @value;
+
+		&-xs {
+			@media screen and (min-width: @screen-xs-max + 1) {
+				display: none;
+			}
+
+			@media screen and (max-width: @screen-xs-max) {
+				display: @value;
+			}
+		}
+	}
+});
+
+// align
+.align-items-center {align-items: center;}
+
+.align-items-baseline {align-items: baseline;}
+
+.justify-content-center {justify-content: center;}
+
+.justify-content-between {justify-content: space-between;}
+
+.justify-content-end {justify-content: flex-end;}
+
+.justify-content-around {justify-content: space-around;}
+
+.flex-wrap {flex-wrap: wrap;}
+
+
+@media screen and (max-width: @screen-xs-max) {
+	.flex-xs-wrap {
+		flex-wrap: wrap;
+	}
+
+	.justify-content-between-xs {
+		justify-content: space-between;
+	}
+
+	.justify-content-center-xs {justify-content: center;}
+}
+
+
+
+.flex-grow-1 { flex-grow: 1;}
+
+// stuff
+.cursor-point {cursor: pointer;}
+
+.fw-black {font-weight: 900;}
+
+.fw-bold {font-weight: bold;}
+
+.fw-light {font-weight: 300;}
+
+.fw-normal {font-weight: 400;}
+
+.fw-semi {font-weight: 600;}
+
+.w-100 {width: 100%;}
+
+@media screen and (max-width: @screen-sm-max) {
+	.w-xs-100 {
+		width: 100%;
+	}
+}
+
+.w-auto {width: auto;}
+
+.pos-relative {position: relative;}
+
+.resize-none {
+	resize: none;
+}
+
+.btn-radius {border-radius: 8px;}
+
+.text-decoration {text-decoration: underline !important;}
+
+// color
+.text-color {
+	color: @text-color;
+}
+
+.user-color {
+	color: @user-color;
+}
+
+.text-link {
+	color: @link-color;
+}
+
+.text-black {
+	color: #000;
+}
+
+.text-secondary {
+	color: #B0B0B0;
+}
+
+.ws-norwap {
+	white-space: nowrap;
+}
+
+.margin-mixin (@i) when (@i >= 0) {
+	.mt-@{i} {
+		margin-top: (@i * 8px);
+	}
+	.mt-h@{i} {
+		margin-top: (@i * 4px);
+	}
+
+	.mb-@{i} {
+		margin-bottom: (@i * 8px);
+	}
+	.mb-h@{i} {
+		margin-bottom: (@i * 4px);
+	}
+	.ml-@{i} {
+		margin-left: (@i * 8px);
+	}
+	.mx-h@{i} {
+		margin-left: @i * 4px;
+		margin-right: @i * 4px;
+	}
+	.mx--@{i} {
+		margin-left: (-@i * 8px);
+		margin-right: (-@i * 8px);
+	}
+
+	.ml-h@{i} {
+		margin-left: (@i * 4px);
+	}
+	.mr-@{i} {
+		margin-right: (@i * 8px);
+	}
+	.mr-h@{i} {
+		margin-right: (@i * 4px);
+	}
+	.mx-@{i} {margin-left: (@i * 8px);margin-right: (@i * 8px);}
+	.my-@{i} {margin-top: (@i * 8px);margin-bottom: (@i * 8px);}
+	.margin-mixin(@i - 1);
+
+	@media screen and (max-width: @screen-sm-max) {
+		.mx-sm-@{i} {
+			margin-left: (@i * 8px);
+			margin-right: (@i * 8px);
+		}
+
+		.my-sm-@{i} {margin-top: (@i * 8px);margin-bottom: (@i * 8px);}
+
+		.ml-sm-@{i} {
+			margin-left: (@i * 4px);
+		}
+
+		.mt-sm-@{i} {
+			margin-top: (@i * 8px);
+		}
+	}
+
+	@media screen and (max-width: @screen-xs-max) {
+		.mx-xs-@{i} {
+			margin-left: (@i * 8px);
+			margin-right: (@i * 8px);
+		}
+
+		.my-xs-@{i} {margin-top: (@i * 8px);margin-bottom: (@i * 8px);}
+
+		.ml-xs-@{i} {
+			margin-left: (@i * 4px);
+		}
+
+		.mt-xs-@{i} {
+			margin-top: (@i * 8px);
+		}
+
+		.mb-xs-@{i} {
+			margin-bottom: (@i * 8px);
+		}
+	}
+}
+
+.padding-mixin (@i) when (@i >= 0) {
+	.pt-@{i} {
+		padding-top: (@i * 8px);
+	}
+	.pt-h@{i} {
+		padding-top: (@i * 4px);
+	}
+	.pb-@{i} {
+		padding-bottom: (@i * 8px);
+	}
+	.pb-h@{i} {
+		padding-bottom: (@i * 4px);
+	}
+	.pl-@{i} {
+		padding-left: (@i * 8px);
+	}
+	.pl-h@{i} {
+		padding-left: (@i * 4px);
+	}
+	.pr-@{i} {
+		padding-right: (@i * 8px);
+	}
+	.pr-h@{i} {
+		padding-right: (@i * 4px);
+	}
+	.px-@{i} {padding-left: (@i * 8px);padding-right: (@i * 8px);}
+	.py-@{i} {padding-top: (@i * 8px);padding-bottom: (@i * 8px);}
+	.padding-mixin(@i - 1);
+
+	@media screen and (max-width: @screen-xs-max) {
+		.pb-xs-h@{i} {
+			padding-bottom: (@i * 4px);
+		}
+	}
+}
+
+// Call the mixin with a counter to start the loop
+.margin-mixin(8);
+.padding-mixin(8);

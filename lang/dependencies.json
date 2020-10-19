@@ -1,0 +1,149 @@
+{
+  "cwd": "./node_modules/",
+  "styles": [
+  ],
+  "styles_ootb": [
+    {
+      "file": "bootstrap.min.css",
+      "from": "bootstrap/dist/css/"
+    }
+  ],
+  "scripts_ootb": [
+    {
+      "file": "jquery.min.js",
+      "from": "jquery/dist/"
+    },
+    {
+      "file": "enquire.min.js",
+      "from": "enquire.js/dist/"
+    }
+  ],
+  "scripts": [
+    {
+      "file": "underscore-min.js",
+      "from": "underscore/"
+    },
+    {
+      "file": "webfontloader.js",
+      "from": "webfontloader/"
+    },
+    {
+      "file": "URI.min.js",
+      "from": "URIjs/src/"
+    },
+    {
+      "file": "bootstrap.min.js",
+      "from": "bootstrap/dist/js/"
+    },
+    {
+      "file": "jquery.cookie.js",
+      "from": "jquery.cookie/"
+    },
+    {
+      "file": "jquery.validate.min.js",
+      "from": "jquery-validation/dist/"
+    },
+    {
+      "file": "additional-methods.js",
+      "from": "jquery-validation/dist/"
+    },
+    {
+      "file" : "jquery.detect_swipe.js",
+      "from" : "detect_swipe/"
+    },
+    {
+      "file": "featherlight.min.js",
+      "from": "featherlight/release/"
+    },
+    {
+      "file": "featherlight.gallery.min.js",
+      "from": "featherlight/release/"
+    },
+    {
+      "file": "bootstrap-datepicker.min.js",
+      "from": "bootstrap-datepicker/dist/js/"
+    },
+    {
+      "file": "bootstrap-tokenfield.min.js",
+      "from": "bootstrap-tokenfield/dist/"
+    },
+    {
+      "file": "jquery.mark.min.js",
+      "from": "mark.js/dist/"
+    },
+    {
+      "file": "perfect-scrollbar.min.js",
+      "from": "perfect-scrollbar/dist/"
+    }
+  ],
+  "scripts_direct": [
+    {
+      "file": "slick.min.js",
+      "from": "./assets/dist/js/"
+    },
+    {
+      "file" : "clamp.min.js",
+      "from": "./assets/dist/js/"
+    }
+  ],
+  "scripts_assets": [
+    {
+      "file": "global.js",
+      "from": "assets/js/"
+    },
+    {
+      "file": "helper.js",
+      "from": "assets/js/"
+    },
+    {
+      "file": "local.js",
+      "from": "assets/js/"
+    }
+  ],
+  "scripts_assets_corporate": [
+    {
+      "file": "underscore-min.js",
+      "from": "./node_modules/underscore/"
+    },
+    {
+      "file": "jquery.min.js",
+      "from": "./node_modules/jquery/dist/"
+    },
+    {
+      "file": "bootstrap.min.js",
+      "from": "./node_modules/bootstrap/dist/js/"
+    },
+    {
+      "file": "enquire.min.js",
+      "from": "./node_modules/enquire.js/dist/"
+    },
+    {
+      "file": "webfontloader.js",
+      "from": "./node_modules/webfontloader/"
+    },
+    {
+      "file": "slick.min.js",
+      "from": "./assets/dist/js/"
+    },
+    {
+      "file": "global.js",
+      "from": "corporate-prefix/assets/js/"
+    },
+    {
+      "file": "helper.js",
+      "from": "corporate-prefix/assets/js/"
+    },
+    {
+      "file": "local.js",
+      "from": "corporate-prefix/assets/js/"
+    }
+  ],
+  "fonts": [
+    {
+      "file": "**",
+      "from": "font-awesome/fonts/"
+    }
+  ],
+  "images": [
+  ]
+}

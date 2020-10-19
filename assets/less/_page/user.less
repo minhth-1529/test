@@ -1,0 +1,109 @@
+.site-user {
+	margin-top: 42px;
+
+	@media screen and (min-width: 1366px) {
+		padding-left: 108px;
+	}
+
+	.user-banner{
+		position: absolute;
+		top: 28px;
+		bottom: 28px;
+		left: 100%;
+		margin-left: -28px;
+
+		@media screen and (max-width: 1365px) {
+			display: none;
+		}
+	}
+
+	&__form {
+		background-color: #fff;
+		padding: 28px 50px;
+		max-width: 508px;
+		position: relative;
+
+		@media screen and (max-width: 1365px) {
+			margin: 0 auto;
+		}
+
+		@media screen and (max-width: @screen-xs-max) {
+			padding: 16px;
+		}
+	}
+
+	&__tab {
+		.login {
+			@media screen and (min-width: @screen-sm-min) {
+				margin-right: 100px;
+			}
+		}
+
+		li {
+			a {
+				text-decoration: none;
+				border-bottom: 2px solid transparent;
+				padding-bottom: 2px;
+
+				&:hover {
+					color: #00D270;
+				}
+			}
+
+			&.active {
+				a {
+					border-bottom: 2px solid #00D270;
+					color: #00D270;
+				}
+			}
+		}
+
+		&-content {
+			.form-control {
+				font-size: 14px;
+
+				&::-webkit-input-placeholder {
+					color: #C5C5C5;
+				}
+
+				&::-moz-placeholder {
+					color: #C5C5C5;
+				}
+
+				&:-ms-input-placeholder {
+					color: #C5C5C5;
+				}
+
+				&:-moz-placeholder {
+					color: #C5C5C5;
+				}
+			}
+		}
+
+		@media screen and (max-width: @screen-xs-max) {
+			justify-content: space-between;
+		}
+	}
+
+	&__social {
+		.list{
+			&-item {
+				padding: 0 4px;
+			}
+		}
+	}
+
+	&__confirm{
+		border-top: 1px solid #00D270;
+		padding-top: 12px;
+		margin-top: 12px;
+
+		a{
+			color: #4A90E2;
+
+			&:hover{
+				color: @brand-primary;
+			}
+		}
+	}
+}

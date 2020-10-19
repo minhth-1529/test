@@ -1,0 +1,28 @@
+{
+  "name": "hybris",
+  "version": "1.0.0",
+  "description": "hybris project",
+  "main": "index.js",
+  "author": "minh.tranhoang@sai-digital.com",
+  "license": "ISC",
+  "dependencies": {
+    "global": "^4.3.2",
+    "grunt": "^1.0.3",
+    "grunt-cli": "^1.3.2"
+  },
+  "devDependencies": {
+    "bootstrap": "3.3.7",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-imagemin": "^3.1.0",
+    "grunt-contrib-less": "^2.0.0",
+    "grunt-contrib-uglify": "^4.0.1",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-nunjucks-2-html": "^2.2.0",
+    "grunt-sync": "0.8.0",
+    "grunt-text-replace": ">=0.4.0",
+    "imagemin-mozjpeg": "^8.0.0",
+    "jquery": "^3.3.1",
+    "less-plugin-autoprefix": "^2.0.0"
+  }
+}

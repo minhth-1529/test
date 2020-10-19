@@ -1,0 +1,57 @@
+.ver-center() {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hoz-center() {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.ver-hoz-center() {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.item-center(@type) {
+  display: @type;
+  align-items: center;
+  justify-content: center;
+}
+
+.fz-lh(@size) {
+  font-size: @size;
+  line-height: @size + (@size / 2);
+}
+
+.truncateLines(@font-size, @line-height, @lines, @fixheight) {
+  max-width: 100%;
+  display: block;
+  overflow: hidden;
+  padding: 0;
+  font-size: @font-size;
+  text-overflow: ellipsis;
+  line-height: @line-height;
+
+  & when (@fixheight = false) {
+    max-height: @line-height * @lines;
+    height: auto;
+  }
+
+  & when(@fixheight = true) {
+    height: @line-height * @lines;
+  }
+
+  & when(@lines = 1) {
+    white-space: nowrap;
+  }
+
+  & when not(@lines = 1) {
+    white-space: normal;
+  }
+
+  -webkit-line-clamp: @lines;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
